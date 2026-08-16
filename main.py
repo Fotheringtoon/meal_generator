@@ -1,21 +1,24 @@
 import random
-from meals_list import meals_list
+from meals_list import evening_list
 
 def change_meal(day_to_change):
-    change_meal = random.choice(meals_list)
+    change_meal = random.choice(evening_list)
 
     while change_meal in meal_plan.values():
-        change_meal = random.choice(meals_list)
+        change_meal = random.choice(evening_list)
 
     meal_plan [day_to_change] = change_meal
 
 days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-random.shuffle(meals_list)
+meal_times = ['Breakfast', '10am Snack', 'Lunch', '3pm Snack', 'Evening Meal']
+random.shuffle(evening_list)
 
 meal_plan = {}
 
-for day, meal in zip(days, meals_list):
-    meal_plan [day] = meal
+for day in days:
+    meal_plan[day] = {}   
+    for meal_time in meal_times:   
+        meal_plan[day][meal_time] = "Test"      
 print(meal_plan)
 
 

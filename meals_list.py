@@ -1,4 +1,4 @@
-meals_list = [
+evening_list = [
 'Chicken & Rice',
 'Mealballs',
 'Sausage & Mash',
@@ -23,4 +23,24 @@ meals_list = [
 'Lasagne',
 'Creamy Chicken Pasta'
 
+]
+
+breakfast_list = [
+    'Smoothie',
+    'Porridge',
+    'Scrambled Eggs',
+
+]
+
+snack_list = [
+    'Overnight oats',
+    'Soup',
+    'Oatcakes & Nut butter',
+
+]
+
+lunch_list = [
+    'Cold Pasta Salad',
+    'Tomato Cous Cous',
+    
 ]
