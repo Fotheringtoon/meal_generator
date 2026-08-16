@@ -1,5 +1,6 @@
 import random
 from meals_list import evening_list
+from meals_list import breakfast_list
 
 def change_meal(day_to_change):
     change_meal = random.choice(evening_list)
@@ -17,8 +18,9 @@ meal_plan = {}
 
 for day in days:
     meal_plan[day] = {}   
-    for meal_time in meal_times:   
-        meal_plan[day][meal_time] = "Test"      
+    for meal_time in meal_times:          
+        if meal_plan[day][meal_time] == "Breakfast":
+            meal_plan[day][meal_time] = random.choice(breakfast_list)
 print(meal_plan)
 
 
